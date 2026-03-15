@@ -16,3 +16,8 @@ this may be a webpage, a video, a photo, or other media.</p>
 It is important to bring up as it has been done in the past and you may rarely see it now.</p>
 
 <p><h3>The Host / Domain</h3></p>
+<p>This is the name of the website your visiting, each domain name is unique.</p>
+
+<p><h3>Port</h3></p>
+<p>The port number helps your browser find the right service hosted on the web-server,<br>
+most commonly 80 and 443 for HTTP and HTTPs</p>
