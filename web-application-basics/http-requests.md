@@ -69,4 +69,18 @@ Example: METHOD/path HTTP/version
 
 ><p><h3>CONNECT</h3></p>
 >
-><p>Used to create a secure connection like HTTPS, this is less common but critical for encrypted communication.</p>
+><p>Used to create a secure connection like HTTPS.<.p>
+<p>this is less common but critical for encrypted communication.</p>
+
+<p><h1> URL Path</h1></p>
+<p>The URL path tells the server where to find the resource the user is asking for.</p>
+<p>You will find the path after the .com</p>
+
+```
+github.com/ch1c4g0
+
+Path = /ch1c4g0
+
+````
+<p>Directory attacks are incredibly common. Precautions should be taken such as,<br>
+Validating the URL Path to prevent unauthorised acces and sanitising the path to avoid injection.</p>
