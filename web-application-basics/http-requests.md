@@ -84,3 +84,33 @@ Path = /ch1c4g0
 ````
 <p>Directory attacks are incredibly common. Precautions should be taken such as,<br>
 Validating the URL Path to prevent unauthorised acces and sanitising the path to avoid injection.</p>
+
+<p><h1>The history of HTTP and it's versions</h1></p>
+<p>HTTP version shows the protocol version for communication between client and server.</p>
+
+><p><h3>HTTP/0.9</p></h3>
+>
+><p>Created in 1991, only support GET Requests.</p>
+
+><p><h3>HTTP/1.0</h3></p>
+>
+><p>Created in 1996, Added headers and better support for different types of content, as well as<br>
+>improved caching.</p>
+
+><p><h3>HTTP/1.1</h3></p>
+>
+><p>Created in 1997, brought persistent connections, chunked transfer encoding, and better caching.<br>
+>It is still widely used today.</p>
+
+><p><h3>HTTP/2</h3></p>
+>
+><p>Created in 2015, introduced features like multiplexing, header compression, and prioritisation for<br>
+>faster performance.</p>
+
+><p><h3>HTTP/3</h3></p>
+>
+><p>Created in 2022, it was built on HTTP/2 but uses a new protocol (QUIC)<br>
+>for quicker and more secure connections.</p>
+
+<p>Although HTTP/2 and HTTP/3 offer better speed and security, many systems still use<br>
+HTTP/1.1 because it's well supported and works with most existing setups.</p>
