@@ -46,3 +46,27 @@ Example: METHOD/path HTTP/version
 <p>Just like PUT, only authorised users should be able to send DELETE requests.</p>
 
 <p><h1>Less Common HTTP Requests,</h1></p>
+
+><p><h3>PATCH</h3></p>
+>
+><p>Used to make updates to part of a resource.</p>
+<p>usefull for small updates.</p>
+
+><p><h3>HEAD</h3></p>
+>
+><p>Works like GET but only retrieves Headers, not the full content.</p>
+<p>Great for checking meta-data.</p>
+
+><p><h3>OPTIONS</h3></p>
+>
+><p>Tells you what methods are available for a specific resource.</p>
+<p>This helps clients understand what they can do with the server.</p>
+
+><p><h3>TRACE</h3></p>
+>
+><p>Similar to OPTIONS, it shows what methods are allowed.</p>
+<p>Often used for debugging and is typically disabled on web servers.</p>
+
+><p><h3>CONNECT</h3></p>
+>
+><p>Used to create a secure connection like HTTPS, this is less common but critical for encrypted communication.</p>
