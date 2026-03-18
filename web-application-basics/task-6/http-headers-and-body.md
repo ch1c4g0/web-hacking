@@ -70,7 +70,7 @@ name=Ch1c4g0&age=25&country=NZ
 
 ```
 POST /upload HTTP/1.1
-Host: tryhackme.com
+Host: github.com
 User-Agent: Mozilla/5.0
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
@@ -79,7 +79,7 @@ Content-Disposition: form-data; name="username"
 
 aleksandra
 ----WebKitFormBoundary7MA4YWxkTrZu0gW
-Content-Disposition: form-data; name="profile_pic"; filename="aleksandra.jpg"
+Content-Disposition: form-data; name="profile_pic"; filename="goofy-goober.jpg"
 Content-Type: image/jpeg
 
 [Binary Data Here representing the image]
@@ -93,14 +93,30 @@ in curly brackets.</p>
 
 ```
 POST /api/user HTTP/1.1
-Host: tryhackme.com
+Host: ch1c4g0.com
 User-Agent: Mozilla/5.0
 Content-Type: application/json
 Content-Length: 62
 
 {
-    "name": "Aleksandra",
-    "age": 27,
-    "country": "US"
+    "name": "ch1c4g0",
+    "age": 25,
+    "country": "NZ"
 }
+```
+<p><h1>XML (Application/XML)</h1></p>
+<p>Here data is stored within tags that have an opening and closing.</p>
+
+```
+POST /api/user HTTP/1.1
+Host: tryhackme.com
+User-Agent: Mozilla/5.0
+Content-Type: application/xml
+Content-Length: 124
+
+<user>
+    <name>Aleksandra</name>
+    <age>27</age>
+    <country>US</country>
+</user>
 ```
