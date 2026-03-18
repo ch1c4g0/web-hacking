@@ -56,3 +56,51 @@ Content-Type: application/json
 ```
 key1=value&key2=value
 ```
+```
+POST /profile HTTP/1.1
+Host: github.com
+User-Agent: Mozilla/5.0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 33
+
+name=Ch1c4g0&age=25&country=NZ
+```
+<p><h1>Form Data (Multi-Part/Form Data)</h1></p>
+<p>Allows multiple data blocks to be sent where each block is separated by a boundary string.</p>
+
+```
+POST /upload HTTP/1.1
+Host: tryhackme.com
+User-Agent: Mozilla/5.0
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+----WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="username"
+
+aleksandra
+----WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="profile_pic"; filename="aleksandra.jpg"
+Content-Type: image/jpeg
+
+[Binary Data Here representing the image]
+----WebKitFormBoundary7MA4YWxkTrZu0gW--
+```
+
+<p><h1>JSON (Application/JSON)</h1></p>
+<p>In this format, you send data in JavaScript Object Notation.<br>
+Theses are stored like functions within python, (name=value), separated line-by-line, commas, and enclosed<br>
+in curly brackets.</p>
+
+```
+POST /api/user HTTP/1.1
+Host: tryhackme.com
+User-Agent: Mozilla/5.0
+Content-Type: application/json
+Content-Length: 62
+
+{
+    "name": "Aleksandra",
+    "age": 27,
+    "country": "US"
+}
+```
