@@ -47,3 +47,10 @@ Set-Cookie: sessionId=38af1337es7a8
 Cache-Control: max-age=600
 ```
 
+<p><h2>Location</h2></p>
+
+<p>Used in redirection (3xx) responses. It tells the client where to go next if the resource has moved. If these are not properly sanitsed, it could lead to open redirect vulnerabilities allow attackers to redirect users to harmful sites.</p>
+
+<p><h1>The Response Body</h1></p>
+
+<p>This is where the actual data lives, HTML, JSON, images, ect. The server sends that back to the client, always sanitise and escape this kind of data (especially user-generated content to prevent injection attacks.</p>
