@@ -54,3 +54,21 @@ Cache-Control: max-age=600
 <p><h1>The Response Body</h1></p>
 
 <p>This is where the actual data lives, HTML, JSON, images, ect. The server sends that back to the client, always sanitise and escape this kind of data (especially user-generated content to prevent injection attacks.</p>
+
+
+<p><h1>Q and A</h1></p>
+
+<p>Q: Which HTTP response header can reveal information about the web server's software and version, potentially exposing it to security risks if not removed?</p>
+
+<P>A: Server</P>
+
+<p>Q: Which flag should be added to cookies in the Set-Cookie HTTP response header to ensure they are only transmitted over HTTPS, protecting them from being exposed during unencrypted transmissions?</p>
+
+<p>A: Secure</p>
+
+<p>Which flag should be added to cookies in the Set-Cookie HTTP response header to prevent them from being accessed via JavaScript, thereby enhancing security against XSS attacks?</p>
+
+<p>A: HttpOnly</p>
+
+
+
