@@ -11,4 +11,4 @@
 > - X-Content-Type-Options
 > - Referrer-Policy
 
-![Sec-Headers-IO](https://securityheaders.io/)
+https://securityheaders.io/
